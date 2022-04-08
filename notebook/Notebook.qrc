@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/Notebook">
+        <file>res/cursor.png</file>
+        <file>res/drawing.png</file>
+        <file>res/shapes.png</file>
+        <file>res/text.png</file>
+        <file>res/eraser.png</file>
+        <file>res/brushsize.png</file>
+        <file>res/color.png</file>
+        <file>res/ellipse.png</file>
+        <file>res/line.png</file>
+        <file>res/rect.png</file>
+    </qresource>
+</RCC>
