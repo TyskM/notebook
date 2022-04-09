@@ -100,8 +100,7 @@ public:
     void toggleEraser()
     {
         erasing = !erasing;
-        if (erasing) eraseButton->setChecked(true);
-        else         eraseButton->setChecked(false);
+        eraseButton->setChecked(erasing);
     }
 
     void drawLineTo(const QPoint& endPoint)
@@ -138,6 +137,7 @@ public:
         eraseButton = new DefaultSubButton(toggleEraserAction, parent);
         eraseButton->setCheckable(true);
         subtoolLayout->addWidget(eraseButton);
+        eraseButton->setChecked(erasing);
 
         canvas->setFocusPolicy(Qt::NoFocus);
         updateCursor();
@@ -347,7 +347,7 @@ public:
         else         painter.begin(&canvas->image);
         painter.setPen(pen);
         
-        auto font = painter.font();
+        QFont font = painter.font();
         font.setPointSize(fontSize);
         painter.setFont(font);
 
