@@ -1,6 +1,6 @@
-# notebook
+#Notebook
 Scuffed OneNote  
-A project for praticing Qt.  
+A project I made to practice Qt.  
 Supports typing, drawing, shapes, text as images, saving/loading and importing/exporting images.  
 Uses Qt5 and Quazip.  
 I used this example as a base: https://doc.qt.io/qt-5/qtwidgets-widgets-scribble-example.html  
